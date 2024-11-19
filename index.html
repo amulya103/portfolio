@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Amulya Kumar Sahoo</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(120deg, #3498db, #2ecc71);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        header nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #f39c12;
+        }
+
+        section {
+            padding: 5rem 2rem;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        #home {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #home h1 {
+            font-size: 3rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        #home p {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        #about, #projects, #contact {
+            background: rgba(0, 0, 0, 0.7);
+            margin: 2rem 0;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .timeline {
+            text-align: left;
+            margin-top: 2rem;
+        }
+
+        .timeline li {
+            margin-bottom: 1rem;
+        }
+
+        .projects-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .project-card {
+            background: #2c3e50;
+            border-radius: 10px;
+            padding: 1rem;
+            width: calc(100% / 3 - 1rem);
+            color: #fff;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        #contact form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        #contact input, #contact textarea, #contact button {
+            width: 100%;
+            margin: 0.5rem 0;
+            padding: 0.7rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        #contact button {
+            background: #3498db;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        #contact button:hover {
+            background: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            background: #34495e;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Amulya Kumar Sahoo</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Experienced Mainframe and DevOps Specialist | Bangalore, Karnataka</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am Amulya Kumar Sahoo, an experienced software engineer with a passion for solving complex challenges. My expertise lies in mainframe technologies, DevOps, and application modernization.</p>
+        <ul class="timeline">
+            <li><b>2010-2013:</b> Senior Software Engineer at Wipro Technologies</li>
+            <li><b>2013-2022:</b> Mainframe Lead at FedEx Services</li>
+            <li><b>2007:</b> Mainframe Engineer at IBM</li>
+            <li><b>2006:</b> .NET Developer</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Priority Track</h3>
+                <p>A streamlined logistics application for FedEx Services.</p>
+            </div>
+            <div class="project-card">
+                <h3>Mainframe Retirement</h3>
+                <p>Modernized legacy systems, retiring over 500 modules.</p>
+            </div>
+            <div class="project-card">
+                <h3>Scan Applications</h3>
+                <p>Optimized logistics through innovative scanning solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Amulya Kumar Sahoo | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
